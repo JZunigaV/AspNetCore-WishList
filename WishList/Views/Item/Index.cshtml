@@ -1,0 +1,6 @@
+<h1>Wshlist</h1>
+<a href="" asp-action="create">Add Item</a>
+<ul>@foreach (var item in Item)
+{
+    <li>item.Description</li> <a asp-action="delete" asp-route-id="item.Id">Delete</a>
+}</ul>
